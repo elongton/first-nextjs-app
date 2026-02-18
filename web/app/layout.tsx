@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Crypto Lab — First Next.js App",
@@ -9,9 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body style={{ fontFamily: "Inter, system-ui, sans-serif", margin: 0, background: "#0b1020", color: "#e6edf7" }}>
-                {children}
-            </body>
+            <body>{children}</body>
         </html>
     );
 }
